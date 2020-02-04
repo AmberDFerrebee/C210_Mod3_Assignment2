@@ -1,1 +1,1 @@
-This repository is for collaboration on assignments related to C210. 
+This repository is for collaboration on Assignment#2 in C210.
