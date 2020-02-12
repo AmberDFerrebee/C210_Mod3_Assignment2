@@ -6,7 +6,6 @@ import java.text.*;
 // exercise 9.7
 // requirements:
 // write an Account class
-             // bethanie testing --- will remove
 			// private int data field named id, default 0
 			// private double data field named balance, default 0
 			// private double data named annualInterestRate, default 0
