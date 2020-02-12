@@ -23,7 +23,7 @@ import java.text.*;
 public class Account {
 	
 	// created this final variable so that the initial date is finalized
-	final private Date today = new Date();
+	rivate Date today = new Date();//should not be e final --- finals are constants that never change - the dateCreated is all you need
 	// required data field, default is 0
 	private int id; 
 	// required data field, default is 0
@@ -32,6 +32,17 @@ public class Account {
 	private double annualInterestRate; 
 	// required data field, default is 0
 	private Date dateCreated = today; 
+	// required no-args constructor //This shouldn't have anything in the curly brakets - also should be right under you variable list
+	public Account() { 
+		
+	}
+	
+	// required constructor that accepts specified data field values - put at top right under no-args constructor
+	public Account(int id, double startingBal, double startAnnualRate ) { 
+		this.id = id;
+		this.balance = startingBal;
+		this.annualInterestRate = StartAnnualRate // the setter for the interest doesn't go here.  Needs like the other variables
+	}
 	
 	// required method to perform withdrawals
 	public void withdraw(double amount) { 
@@ -81,14 +92,6 @@ public class Account {
 	public void setIntRate() { 
 		this.annualInterestRate = .045;
 	}
-	// required constructor that accepts specified data field values
-	public Account(int id, double startingBal) { 
-		this.id = id;
-		this.balance = startingBal;
-		setIntRate();
-	}
-	// required no-args constructor 
-	public Account() { 
-		setIntRate();
-	}
+	
+
 }
